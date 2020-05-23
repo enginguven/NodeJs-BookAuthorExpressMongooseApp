@@ -1,0 +1,38 @@
+{
+  "name": "bookauthorexpressmongooseapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha tests/**/*Tests.js",
+    "start": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "Engin Güven",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-async-errors": "^2.1.0",
+    "joi": "^14.3.1",
+    "mongoose": "^5.9.15",
+    "nodemon": "^2.0.4",
+    "winston": "^3.2.1"
+  },
+  "nodemonConfig": {
+    "restartable": "rs",
+    "ignore": [
+      "node_modules/**/node_modules"
+    ],
+    "delay": "2000",
+    "env": {
+      "NODE_ENV": "development",
+      "PORT": 3000
+    }
+  },
+  "devDependencies": {
+    "mocha": "^7.1.2",
+    "should": "^13.2.3",
+    "sinon": "^9.0.2",
+    "supertest": "^4.0.2"
+  }
+}

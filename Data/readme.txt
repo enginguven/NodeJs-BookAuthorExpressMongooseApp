@@ -1,0 +1,1 @@
+you can import these files via mongodb compass
